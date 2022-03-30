@@ -6,7 +6,7 @@
 /*   By: mtavares <mtavares@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 16:14:27 by mtavares          #+#    #+#             */
-/*   Updated: 2022/03/29 12:39:30 by mtavares         ###   ########.fr       */
+/*   Updated: 2022/03/30 19:54:51 by mtavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,9 @@ char	*get_next_line(int fd)
 	int			byte_read;
 	static char	buff[BUFFER_SIZE + 1];
 	char		*line;
-	int			counter;
 
 	if (fd < 0 || BUFFER_SIZE < 1 || fd >= FOPEN_MAX)
 		return (NULL);
-	counter = 1;
 	line = NULL;
 	byte_read = 1;
 	while (1)
