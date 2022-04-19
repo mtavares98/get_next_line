@@ -6,7 +6,7 @@
 /*   By: mtavares <mtavares@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 15:47:11 by mtavares          #+#    #+#             */
-/*   Updated: 2022/03/24 21:08:32 by mtavares         ###   ########.fr       */
+/*   Updated: 2022/04/19 17:06:58 by mtavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define GET_NEXT_LINE_H
 
 # include <unistd.h>
-# include <fcntl.h>
 # include <stdlib.h>
 # include <stdio.h>
 
