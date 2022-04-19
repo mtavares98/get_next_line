@@ -6,7 +6,7 @@
 /*   By: mtavares <mtavares@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 16:14:27 by mtavares          #+#    #+#             */
-/*   Updated: 2022/04/19 17:41:47 by mtavares         ###   ########.fr       */
+/*   Updated: 2022/04/19 18:30:23 by mtavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*get_next_line(int fd)
 			byte_read = read(fd, buff[fd], BUFFER_SIZE);
 		if (byte_read > 0)
 			line = ft_get_line(buff[fd], line);
-		if (byte_read < 1 || ft_checknl(buff[fd]))
+		if (ft_checknl(buff[fd]) || byte_read < 1)
 			return (line);
 	}
 	return (line);
