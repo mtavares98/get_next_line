@@ -6,7 +6,7 @@
 /*   By: mtavares <mtavares@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 16:14:27 by mtavares          #+#    #+#             */
-/*   Updated: 2022/04/19 18:30:23 by mtavares         ###   ########.fr       */
+/*   Updated: 2022/04/21 14:43:13 by mtavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*get_next_line(int fd)
 {
 	int			byte_read;
-	static char	buff[FOPEN_MAX][BUFFER_SIZE];
+	static char	buff[FOPEN_MAX][BUFFER_SIZE + 1];
 	char		*line;
 
 	if (fd < 0 || BUFFER_SIZE < 1 || fd >= FOPEN_MAX)
